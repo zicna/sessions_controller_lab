@@ -11,10 +11,7 @@ class SessionsController < ApplicationController
       session[:name] = params[:name]
       redirect_to '/'
     end
-
-
-
-
+    # do NOT forget that in ruby "" => 'true', only 'nil' and 'false' => 'false'
     # if params[:name]
     #   session[:name] = params[:name]
     #   redirect_to '/'
